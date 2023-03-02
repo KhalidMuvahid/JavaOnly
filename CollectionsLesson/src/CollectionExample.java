@@ -60,9 +60,21 @@ public class CollectionExample {
         for (Object cs:setCollection){
             System.out.print(cs+" ");
         }
+        System.out.println("\n");
 
         //Map is collection but not inherited from collection interface
+        System.out.println("Map");
         Map map = new HashMap();
+        map.put(1,"Kale");
+        map.put(2,"Joh");
+        map.put(3,"Brannah");
+        map.put(3,"Brannah");
+        Set mapSet = map.entrySet();
+        //Set mapSet2 = map.keySet();
+        for (Object m : mapSet){
+            System.out.print(m+" ");
+        }
+        System.out.println("\n"+map.get(2));
 
 
 
